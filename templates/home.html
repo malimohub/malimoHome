@@ -1,9 +1,16 @@
 {% extends "layout.html" %}
 
 {% block content %}
+<style>
+.navbar-default {
+    background-color: #FFFFFF;
+    border-color: #CEE3F6;
+  }
+</style>
 
 <nav class="navbar navbar-default navbar-fixed-top" >
 
+	<!-- Navbar header --> 
 	<div class="navbar-header">
    		<a class="navbar-brand" >Malcolm Ian Monroe</a>
 	</div>
@@ -17,24 +24,82 @@
 </nav>
 <br>
 <br></br>
-
+<br>
+{% set worker = work_data.experience %}
 <div class="row"> <!-- Start of first row on page -->
 
 
 		<div class="row">
-		  <div class="col-md-4">
+ 
+		  <div class="col-md-3" "col-md-5">
 		    <div class="thumbnail">
-		      <img src="{{url_for('static', filename='media/malcolm_monroe_headshot.png')}}" alt="...">
+		      <img src="{{url_for('static', filename='media/my_profile_shot.jpg')}}" >
 		      <div class="caption">
-		        <h3>Thumbnail label</h3>
-		        <p>...</p>
-		        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+		        <h3>About Me</h3>
+		        <p>
+            I am a experienced Software Integration Engineer, having developed applications using Python and various python web development frameworks, databases and APIs.  I’m also comfortable working directly with customers having consulted on data ETL solutions. I enjoy solving complex problems and thrive in a work environment where innovation and collaboration are encouraged.  
+            </p>
+		    
 		      </div>
+        
 		    </div>
 		  </div>
 		
-		<div class="col-md-8">
-			<div id="visualization"></div>
+		<div class="col-md-9">
+    <h1> Education</h1>
+      <p style="font-size: 15px; font:bold;"><a href="http://www.csulb.edu/">
+      California State University Long Beach
+      </a>
+      <span style="font-size: 12px;">- MS Electrical Engineering - Emphasis in Power Electronics.</span>
+      </p>
+    
+      <p style="font-size: 15px; font:bold;"><a href="http://www.csum.edu/">
+      California Maritime Academy
+      </a>
+      <span style="font-size: 12px;">- Bachelors of Science, Marine Engineering</span>
+      </p>
+  
+    <h1> Skills and Knowledge</h1>
+    
+      <p style="font-size: 15px; font:bold;">
+      Currently learning: 
+      <span style="font-size: 12px;">Salt, Django, Swift</span>
+      </p>
+      <p style="font-size: 15px; font:bold;">
+      Proficient in:
+      <span style="font-size: 12px;">Python, Javascript, Flask, Iron Worker, Iron Cache</span>
+      </p>
+      <p style="font-size: 15px; font:bold;">
+      Familiar technologies:
+      <span style="font-size: 12px;">Apache, Nginx, Redis, MySQL, Heroku, AWS</span>
+      </p>
+
+      <h1>Work History</h1> 
+      <div id="accordion"> <!-- Start of accordion-->
+
+      {% for work in worker.keys() %}
+        {% set job = worker[work] %}
+        <h4 style="color: #585858;">{{job.Company}}<span><h6>{{job.Title}}</h6></span><span><h6>{{job.Time}}</h6></span></h4>
+          <div>
+          <h5 style="font-weight:bold; ">Link: <a href="{{job.url}}" style="color: blue ; font-size: 11px;"> {{job.url}}</a></h5>
+          <h5 style="font-weight:bold;">Responsibilites:<span style="float:right; position:relative; left:8px top:-10px;"><img src="/static/media/{{job.image}}" height="64" width=70px></span></h5>
+          {% for line in job.Description %}
+              <h6>
+              {{line}}
+              </h6>
+          {% endfor %}
+          {% if job.Technologies %}
+            <h5 style="font-weight:bold;"> Technologies used: </h5>
+            <h6>{{job.Technologies}}</h6>
+          {% endif %}
+          
+          </div>
+        
+      {% endfor %}
+
+      </div> <!-- End of accordion -->
+    </div>
+
 		</div>
 		</div>
 
@@ -43,131 +108,28 @@
 
 
 
-<br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript">
-  // create a couple of HTML items in various ways
-  //Need to add image for CMA
-  var item1 = '<div id="school1"><h3><a href="http://">California Maritime Academy</a><span><img src="{{ url_for('static', filename='media/lbsu_crest.png') }}" style="width:30px; height:30px"> </img></span></h3><div id="ex1"></div></div>';
-
-  var item2 = '<div id="school2"><h3><a href="http://">Long Beach State University</a><span><img src="{{ url_for('static', filename='media/lbsu_crest.png') }}" style="width:30px; height:30px"> </img></span></h3><div id="ex2"></div></div>';
- 
-  // Make this element data current at all times. 
-  var item3 = '<div id="job1"><h3 href="http://"><a href="http://">Lucid Design Group</a><span><img src="{{ url_for('static', filename='media/lbsu_crest.png') }}" style="width:30px; height:30px"> </img></span></h3><div id="ex3"></div></div>';
-  
-  
-
-  var item4 = '<div id="job2"><h3><a href="http://">Air Systems Inc.</a><span><img src="{{ url_for('static', filename='media/lbsu_crest.png') }}" style="width:30px; height:30px"> </img></span></h3><div id="ex4"></div></div>';
-
-  var item5 = '<div id="job3"><h3><a href="http://">Schneider Electric</a><span><img src="{{ url_for('static', filename='media/lbsu_crest.png') }}" style="width:30px; height:30px"> </img></span></h3><div id="ex5"></div></div>'
-
-  // create data and a Timeline
-  var container = document.getElementById('visualization');
-  var items = new vis.DataSet([
-    {id: 1, content: item1, start: '2009-06-01'},
-    {id: 2, content: item2, start: '2013-04-14'},
-    {id: 3, content: item3, start: '2015-02-01'}, //Make this set to current date
-    {id: 4, content: item4, start: '2015-01-01'},
-    {id: 5, content: item5, start: '2014-01-01'}
-    
-  ]);
-  var options = {
-  	type: 'point',
-  	clickToUse: true
-
-
-  };
-  var timeline = new vis.Timeline(container, items, options);
-
-
-// Need new line for bullet points in injected html
-
-  	//CMA Event Listeners 
-	element = document.getElementById('school1');
-  	element.addEventListener("mouseover",function(){
-  	$("#ex1").append('<div class="panel panel-default"><div class="panel-body">I earned a Bachelor of Science in Marine Engineering.</div></div>')
-  	});
-
- 	element = document.getElementById('school1');
-  	element.addEventListener("mouseout",function(){
-  	$("#ex1").html('')
-  	});
-
-
-
-
-
-// LBSU Even Listeners
-  element = document.getElementById('school2');
-  element.addEventListener("mouseover",function(){
-  	$("#ex2").append('<div class="panel panel-default"><div class="panel-body">I earned a Masters of Science in Electrical Engineering with an emphasis in Power Electronics.</div></div>')
-  });
-
- element = document.getElementById('school2');
-  element.addEventListener("mouseout",function(){
-  	$("#ex2").html('')
-  });
-
-
-
-
-  element = document.getElementById('job1');
-  element.addEventListener("mouseover",function(){
-  	$("#ex3").append('<div class="panel panel-default"><div class="panel-body">Develop and assist clients in developing ETL software.\n Plan, develop test and implement web based applications. Designed, prototyped and received funding to build full feature company cornerstone app. Led company product pep rally, presenting data quality app and development considerations. Worked with engineers to define company data quality process and key metrics. Regularly assist sales in project scoping, by providing technical expertise on hardware and software integration solutions.</div></div>')
-  });
-
- element = document.getElementById('job1');
-  element.addEventListener("mouseout",function(){
-  	$("#ex3").html('')
-  });
-
-
-
-
-	element = document.getElementById('job2');
-  	element.addEventListener("mouseover",function(){
-  	$("#ex4").append('<div class="panel panel-default"><div class="panel-body">Developed software to decrease commercial building energy use for companies such as Google.Regularly Interfaced with third party software and hardware. Led in startup, checkout and commissioning of BAS networks prior to customer delivery. Experience with TCP, BACnet, and Modbus protocols.</div></div>')
- 	 });
-
-	element = document.getElementById('job2');
-	element.addEventListener("mouseout",function(){
-	$("#ex4").html('')
-	});
-
-
-	element = document.getElementById('job3');
-  	element.addEventListener("mouseover",function(){
-  	$("#ex5").append('<div class="panel panel-default"><div class="panel-body">Developed software to control clean room environments for Lockheed Martin. Developed control system sequence of operations. Designed control schematics using AutoCad and low voltage wiring knowledge. Setup field devices, integrating hardware and configuring / troubleshooting networks. Led in the fulfilment of Lockheed Martin service contract, which included field devices, network functionality and programming.</div></div>')
- 	 });
-
-	element = document.getElementById('job3');
-	element.addEventListener("mouseout",function(){
-	$("#ex5").html('')
-	});
-
-
-
-</script>
 
 
 
 {% endblock %}
 {% block footer %}
        
+<script type="text/javascript">
 
+$(function() {
+  $( "#accordion" ).accordion();
+});
+
+
+
+
+
+
+
+
+
+
+</script>
 
 
 
