@@ -35,10 +35,12 @@
 		    <div class="thumbnail">
 		      <img src="{{url_for('static', filename='media/my_profile_shot.jpg')}}" >
 		      <div class="caption">
+          <h5>Email: <a style="font-size:11px; font-color:blue;">malcolmian.monroe@gmail.com</a></h5>
 		        <h3>About Me</h3>
 		        <p>
             I am a experienced Software Integration Engineer, having developed applications using Python and various Python web development frameworks, databases and APIs.  I’m also comfortable working directly with customers having consulted on data ETL solutions. I enjoy solving complex problems and thrive in a work environment where innovation and collaboration are encouraged.  
             </p>
+
 		    
 		      </div>
         
@@ -81,7 +83,7 @@
         {% set job = worker[work] %}
         <h4 style="color: #585858;">{{job.Company}}<span><h6>{{job.Title}}</h6></span><span><h6>{{job.Time}}</h6></span></h4>
           <div>
-          <h5 style="font-weight:bold; ">Link: <a href="{{job.url}}" style="color: blue ; font-size: 11px;"> {{job.url}}</a></h5>
+          <h5 style="font-weight:bold; ">Link: <a href="{{job.url}}" style="font-size: 11px; color:blue; "> {{job.url}}</a></h5>
           <h5 style="font-weight:bold;">Responsibilites:<span style="float:right; position:relative; left:8px top:-10px;"><img src="/static/media/{{job.image}}" height="64" width=70px></span></h5>
           {% for line in job.Description %}
               <h6>
