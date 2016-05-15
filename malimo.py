@@ -4,7 +4,6 @@ import json
 import requests 
 
 app = Flask(__name__)
-
 @app.route('/')
 def get_malimo_home():
 
