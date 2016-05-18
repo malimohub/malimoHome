@@ -18,6 +18,7 @@
 	<div class="divider"></div>
 
 	<div class="collapse navbar-collapse">
+		<a style='position:relative; top:17px; left:76%;' target="_blank"  href='https://www.linkedin.com/in/malcolmmonroe?trk=nav_responsive_tab_profile_pic'><img style='height:2%; width:2%;' src='/static/media/linkedin_logo.png'></a>
 		<a class="navbar-brand pull-right" ><h4 style="color:#8181F7">Malimo</h4></a>
 	</div>
 
@@ -46,9 +47,13 @@
         
 		    </div>
 		  </div>
+ 
+
 		
-		<div class="col-md-9">
-    <h1> Education</h1>
+  <div class="col-md-6">
+      <div>
+      <h1> Education</h1>
+    
       <p style="font-size: 15px; font:bold;"><a href="http://www.csulb.edu/">
       California State University Long Beach
       </a>
@@ -60,11 +65,26 @@
       </a>
       <span style="font-size: 12px;">- Bachelors of Science, Marine Engineering</span>
       </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-    <h1> Skills and Knowledge</h1>
-    
+<h1> Skills and Knowledge </h1>
       <p style="font-size: 15px; font:bold;">
-      Currently learning: 
+      Learning: 
       <span style="font-size: 12px;">Salt, Django, Swift</span>
       </p>
       <p style="font-size: 15px; font:bold;">
@@ -73,8 +93,16 @@
       </p>
       <p style="font-size: 15px; font:bold;">
       Familiar technologies:
-      <span style="font-size: 12px;">Apache, Nginx, Redis, MySQL, Heroku, AWS</span>
+      <span style="font-size: 12px;">Linux, Docker, Apache, Nginx, Redis, MySQL, Heroku, AWS</span>
       </p>
+
+
+
+
+
+
+
+
 
       <h1>Work History</h1> 
       <div id="accordion"> <!-- Start of accordion-->
@@ -84,7 +112,7 @@
         <h4 style="color: #585858;">{{job.Company}}<span><h6>{{job.Title}}</h6></span><span><h6>{{job.Time}}</h6></span></h4>
           <div>
           <h5 style="font-weight:bold; ">Link: <a href="{{job.url}}" style="font-size: 11px; color:blue; "> {{job.url}}</a></h5>
-          <h5 style="font-weight:bold;">Responsibilites:<span style="float:right; position:relative; left:8px top:-10px;"><img src="/static/media/{{job.image}}" height="64" width=70px></span></h5>
+          <h5 style="font-weight:bold;">Responsibilites:<span style="float:right; position:relative; left:8px top:20px;"><img src="/static/media/{{job.image}}" height="64" width=70px></span></h5>
           {% for line in job.Description %}
               <h6>
               {{line}}
@@ -100,13 +128,45 @@
       {% endfor %}
 
       </div> <!-- End of accordion -->
-    </div>
+
+
+
+
+
+   </div>
+   <div class="col-md-3">
+     <div style='position:relative; top:20px; right:10%;'>
+          <img style='position:relative; right:7%; height:40%; width:40%;' src='/static/media/github_logo.png'/>
+          <p style='position:relative; top :-10px;'>Repositories:</p>       
+	    <ul style='position:relative; top:-10px;'>
+              <li>
+                <a target="_blank" href='https://github.com/mmonroe86/satellite_driver_expert_power_plus_api'>satellite_driver_expert_power_plus_api</a>
+              </li>
+	      <li>
+                <a target="_blank" href='https://github.com/mmonroe86/malimoHome'>malimoHome</a>
+              </li>
+            </ul>
+
+     </div>
+   </div>
 
 		</div>
-		</div>
 
-	</div>
+
+
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
