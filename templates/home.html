@@ -57,14 +57,22 @@
       <p style="font-size: 15px; font:bold;"><a href="http://www.csulb.edu/">
       California State University Long Beach
       </a>
-      <span style="font-size: 12px;">- MS Electrical Engineering - Emphasis in Power Electronics.</span>
       </p>
+      <ul>
+      <li>
+      <span style="">Master's of Science, Electrical Engineering - Emphasis in Power Electronics.</span>
+      </li>
+      </ul>
     
       <p style="font-size: 15px; font:bold;"><a href="http://www.csum.edu/">
       California Maritime Academy
       </a>
-      <span style="font-size: 12px;">- Bachelors of Science, Marine Engineering</span>
       </p>
+      <ul>
+       <li>
+         <span style="">Bachelors of Science, Marine Engineering</span>
+       </li>
+       </ul>
     </div>
 
 
@@ -112,11 +120,15 @@
         <h4 style="color: #585858;">{{job.Company}}<span><h6>{{job.Title}}</h6></span><span><h6>{{job.Time}}</h6></span></h4>
           <div>
           <h5 style="font-weight:bold; ">Link: <a href="{{job.url}}" style="font-size: 11px; color:blue; "> {{job.url}}</a></h5>
-          <h5 style="font-weight:bold;">Responsibilites:<span style="float:right; position:relative; left:8px top:20px;"><img src="/static/media/{{job.image}}" height="64" width=70px></span></h5>
+          <h5 style="font-weight:bold;">Responsibilites:<span style="position:relative; left:60%; top:-10px;"><img src="/static/media/{{job.image}}" height="64" width=70px></span></h5>
           {% for line in job.Description %}
+            <ul>
+             <li>
               <h6>
               {{line}}
               </h6>
+             </li>
+            </ul> 
           {% endfor %}
           {% if job.Technologies %}
             <h5 style="font-weight:bold;"> Technologies used: </h5>
