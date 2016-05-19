@@ -1,4 +1,4 @@
-# Malcolm Monroe Portfolio and Website 
+# Malcolm Monroe's Home Page 
 
 This application supports my website/portfolio. It is current and will be constanty updated. The site contains a bit about myself, work experience, and links to my LinkedIn profile, as well as, git hub public repositories I am active in. You can reach the site at http://malimohub.com.
 
