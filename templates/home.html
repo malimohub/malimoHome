@@ -119,8 +119,8 @@
         {% set job = worker[work] %}
         <h4 style="color: #585858;">{{job.Company}}<span><h6>{{job.Title}}</h6></span><span><h6>{{job.Time}}</h6></span></h4>
           <div>
-          <h5 style="font-weight:bold; ">Link: <a href="{{job.url}}" style="font-size: 11px; color:blue; "> {{job.url}}</a></h5>
-          <h5 style="font-weight:bold;">Responsibilites:<span style="position:relative; left:60%; top:-10px;"><img src="/static/media/{{job.image}}" height="64" width=70px></span></h5>
+          <h5 style="font-weight:bold; ">Link: <a href="{{job.url}}" style="font-size: 11px; color:blue; "> {{job.url}}</a><span style='position:relative; left:30%;'><img src="/static/media/{{job.image}}" height="64" width=70px/> </span></h5>
+          <h5 style="font-weight:bold;">Responsibilites:</h5>
           {% for line in job.Description %}
             <ul>
              <li>

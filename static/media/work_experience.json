@@ -46,7 +46,7 @@
 		 	"Location": "Pleasanton, CA",
 		 	"Technologies": "Struxureware, SoMachine Basic, AutoCad",
 		 	"image": "schneider_electric.jpeg",
-		 	"url": "http://www.schneider-electric.com/ww/en/",
+		 	"url": "http://www.schneider-electric.com/",
 		 	"Description": [
 		 		"Developed software to control clean room environments for Lockheed Martin.",
 		 		"Developed control system sequence of operations.",
@@ -64,7 +64,7 @@
 		 	"Location": "Oahu, HI",
 		 	"Technologies": "",
 		 	"image": "uofh.jpeg",
-		 	"url": "http://www.soest.hawaii.edu/UMC/cms/kaimikai-o-kanaloa/",
+		 	"url": "http://www.soest.hawaii.edu/",
 		 	"Description": [
 		 		"Sailed aboard the Ka’imikai –O- Kanaloa, a NOAA research vessel.",
 		 		"Responsible for the main engine generator sets, propulsion system and overall plant operation.",
@@ -81,7 +81,7 @@
 		 	"Location": "Long Beach, CA",
 		 	"Technologies": "", 
 		 	"image": "rolls_royce.png",
-		 	"url": "http://www.rolls-royce.com/products-and-services/marine.aspx",
+		 	"url": "http://www.rolls-royce.com/",
 		 	"Description": [
 		 		"Worked abroad in Africa, performing repairs and recommended maintenance on a Trans Ocean drilling vessel.",
 		 		"Performed inspections and repairs on commercial vessels in the Port of Los Angeles.",
