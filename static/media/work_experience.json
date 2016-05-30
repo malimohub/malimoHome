@@ -1,0 +1,98 @@
+{
+	"experience": 
+
+	{
+		"work1":
+		{
+			"Company": "Lucid Design Group",
+		 	"Title": "Software Integration Engineer",
+		 	"Time": "Feb 2015 - Present",
+		 	"Location": "Oakland, CA",
+		 	"Technologies": "Python, HTML, CSS, AJAX, Flask, Heroku, iron.io, Vim, MySQL, Redis, git, Jira, Google Docs",
+		 	"image": "lucid.jpeg",
+		 	"url": "https://lucidconnects.com/",
+		 	"Description": [
+		 		"Develop and assist clients in developing ETL software.",
+		 		"Plan, develop test and implement web based applications.",
+		 		"Designed, prototyped and received funding to build full feature company cornerstone data quality app.",
+		 		"Led company product pep rally, presenting data quality app and development considerations.",
+		 		"Worked with engineers to define company data quality process and key metrics.",
+		 		"Regularly assist sales in project scoping, by providing technical expertise on hardware and software integration solutions."
+			]
+		},		
+
+		"work2":
+		{
+			"Company": "Air Systems Inc.",
+		 	"Title": "Field Programmer / Engineer",
+		 	"Time": "2014 - 2015",
+		 	"Location": "San Jose, CA",
+		 	"Technologies": "Web Control, Eikon Logic Builder, Paint, Network Hardware",
+		 	"image": "air_systems.png",
+		 	"url": "http://www.airsystemsinc.com/",
+		 	"Description": [
+		 		"Developed software to decrease commercial building energy use for companies such as Google.",
+		 		"Regularly Interfaced with third party software and hardware.",
+		 		"Led in startup, checkout and commissioning of BAS networks prior to customer delivery.",
+		 		"Experience with TCP, BACnet, and Modbus protocols."
+		 	]
+		},
+
+		"work3":
+		{
+			"Company": "Schneider Electric",
+		 	"Title": "Field Programmer / Engineer",
+		 	"Time": "2013 - 2014",
+		 	"Location": "Pleasanton, CA",
+		 	"Technologies": "Struxureware, SoMachine Basic, AutoCad",
+		 	"image": "schneider_electric.jpeg",
+		 	"url": "http://www.schneider-electric.com/",
+		 	"Description": [
+		 		"Developed software to control clean room environments for Lockheed Martin.",
+		 		"Developed control system sequence of operations.",
+		 		"Designed control schematics using AutoCad and low voltage wiring knowledge.",
+		 		"Setup field devices, integrating hardware and configuring and troubleshooting network communications.",
+		 		"Led in the fulfilment of Lockheed Martin service contract, which included field devices, network functionality and programming."
+		 	]
+
+		}, 
+		"work4":
+		{
+			"Company": "University of Hawaii",
+		 	"Title": "First Engineer (Contracted)",
+		 	"Time": "2010 - 2011",
+		 	"Location": "Oahu, HI",
+		 	"Technologies": "",
+		 	"image": "uofh.jpeg",
+		 	"url": "http://www.soest.hawaii.edu/",
+		 	"Description": [
+		 		"Sailed aboard the Ka’imikai –O- Kanaloa, a NOAA research vessel.",
+		 		"Responsible for the main engine generator sets, propulsion system and overall plant operation.",
+		 		"Reported directly to the Chief engineer and Captain.",
+		 		"Funny enough, I recently completed a NOAA API integration for a Lucid Customer. Life comes full circle."
+		 	]
+
+		}, 
+		"work5":
+		{
+			"Company": "Rolls Royce Commercial Marine",
+		 	"Title": "Service Engineer",
+		 	"Time": "2009 - 2010",
+		 	"Location": "Long Beach, CA",
+		 	"Technologies": "", 
+		 	"image": "rolls_royce.png",
+		 	"url": "http://www.rolls-royce.com/",
+		 	"Description": [
+		 		"Worked abroad in Africa, performing repairs and recommended maintenance on a Trans Ocean drilling vessel.",
+		 		"Performed inspections and repairs on commercial vessels in the Port of Los Angeles.",
+		 		"Selected by management to study diesel electrical and control systems in Bergen Norway, at the Bergen Diesel Factory."
+		 	]
+
+		}
+
+	}
+}
+
+
+
+
