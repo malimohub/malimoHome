@@ -79,70 +79,40 @@
 
 							<h2 id="pcb">Education</h2>
                                                         <div id="pc">
-							<p style="font-size: 20px; font:bold;">
-                                                                <a target="_blank" href="http://www.csulb.edu/">
-      California State University Long Beach
-      </a>                                                                <span style="font-size: 17px;">- Master's of Science, Electrical Engineering - Emphasis in Power Electronics.</span>
-                                                                <br>
-                                                                <a target="_blank" href="http://www.csum.edu/">
-      California Maritime Academy
-      </a>
-                                                                <span style="font-size: 17px;">- Bachelor's of Science, Marine Engineering</span>
-                                                        </p>
+                                                               <h3 id='pc' style="font-size: 20px; font:bold;"> <a target="_blank" href="http://www.csulb.edu/">California State University Long Beach</a></h3>                                                               
+								<ul>
+					
+ <li style="font-size: 17px;">Master's of Science, Electrical Engineering - Emphasis in Power Electronics.</li>
+                                        			</ul>
+                                                               <h3 id='pc' style="font-size: 20px; font:bold;"> <a target="_blank" href="http://www.csum.edu/">California Maritime Academy</a></h3>
+                                                                <ul>
+									<li style="font-size: 17px;">Bachelor's of Science, Marine Engineering</li>
+								</ul>
 							</div>
 
 					</section>
 
 				<!-- Two -->
 					<section id="two">
-						<h2 id="pcb">Work Experience<span id="fc" style="font-size:10px;">   &nbsp;(click company logo for more information)</span></h2>
+						<h2 id="pcb">Work Experience</h2>
 
-						<br></br>
-
-						<div class="row">
 						{% set worker = work_data.experience %}
 						{% for work in worker.keys() %}
 						{% set job = worker[work] %}
-							<article class="2u 5u$(xsmall) work-item">
-								<button id='activator' data-toggle="modal" data-target="#{{work}}"  class="image fit thumb"><img src="static/media/{{job.image}}" alt="" /></button>
-							<h3>{{job.Company}}</h3>
+								<h3 id='pc' style="font-size: 20px; font:bold;"><a href="{{job.url}}" target="_blank">{{job.Company}}</a> - <span style="font-size: 17px;">{{job.Location}}</span></h3>
+<h5> Title: {{job.Title}}</h5>
+{% if job.Technologies %}
+<h5><i>Technologies Used: {{job.Technologies}}</i></h5>
+{% endif %}
+	<ul>
+	{% for l in job.Description %}
+		<li>{{l}}</li>
+	{% endfor %}
+	</ul>			
 
-<div class="modal fade" id="{{work}}" role="dialog">
-    <div class="modal-dialog">
-		<!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header" style="background-color:rgba(215,215,215,0.1);">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title"><strong>{{job.Company}} </strong>- {{job.Title}}</h4>
-        </div>
-        <div class="modal-body">
-          <h5 style="font-weight:bold;">Responsibilites:</h5>
-          {% for line in job.Description %}
-            <ul>
-             <li>
-              <h6>
-              {{line}}
-              </h6>
-             </li>
-            </ul>
-          {% endfor %}
-          {% if job.Technologies %}
-            <h5 style="font-weight:bold;"> Technologies used: </h5>
-            <h6>{{job.Technologies}}</h6>
-          {% endif %}
-        </div>
-      </div>
-      
-    </div>
-  </div>
+						{% endfor %}	
 
-
-
-
-							</article>
-						{% endfor %}
-
-						</div>
+					
 						
 
 
