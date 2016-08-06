@@ -8,17 +8,19 @@
 		 	"Title": "Software Integration Engineer",
 		 	"Time": "Feb 2015 - Present",
 		 	"Location": "Oakland, CA",
-		 	"Technologies": "Python, HTML, CSS, AJAX, Flask, Heroku, iron.io, Vim, MySQL, Redis, git, Jira, Google Docs",
+		 	"Technologies": "Python, Javascript, docker, docker-compose, Flask, Heroku, iron.io, MySQL, Redis, GitLab, Jira, Google Docs",
 		 	"image": "lucid.jpeg",
 		 	"url": "https://lucidconnects.com/",
 		 	"Description": [
-		 		"Develop and assist clients in developing ETL software.",
-		 		"Plan, develop test and implement web based applications.",
-		 		"Work with the VP of Engineering and Lead Architect in the design of a new satellite driver framework as to decrease, product dependecies on new integration development, integration development lifecycle and improve logging.",
-				"Designed, prototyped and received funding to build full feature company cornerstone data quality app.",
+		 		"Develop software integrations, as to create a data pipeline between 3rd party software/hardware and Lucid’s cloud solution.",
+		 		"Communicate between 3rd party development teams and customers.",
+			        "Designed the integration driver framework to decrease development lifecycle and improve logging and reliability.",
+                    	        "Designed and received funding to build full feature company cornerstone data quality app.",
 		 		"Led company product pep rally, presenting data quality app and development considerations.",
-				"Worked with engineers to define company data quality process and key metrics.",
-		 		"Regularly assist sales in project scoping, by providing technical expertise on hardware and software integration solutions."
+				"Create professional technical documents for internal and external use.",
+				"Work with a team of engineers to define the company data quality process and key metrics.",
+		 		"Regularly assist sales in project scoping, by providing technical expertise on hardware and software integration solutions.",
+    				"Develop software using the Jira workflow with weekly scrums and bi-weekly sprints."
 			]
 		},		
 
